@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { Canvas } from './SafeCanvas'
+import { useFrame, useThree } from '@react-three/fiber'
 import { useMemo as useM } from 'react'
 import * as THREE from 'three'
 import { Html, RoundedBox } from '@react-three/drei'

@@ -1,5 +1,6 @@
 import { useMemo, useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas } from './SafeCanvas'
+import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { ME } from '../data'
 import { useInView, DPR } from '../hooks'

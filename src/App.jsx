@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { Component, lazy, Suspense } from 'react'
 import Cursor from './components/Cursor'
 import Hero from './components/Hero'
 import { About, Career, Contact, Designs, Experience, Nav, Network, Skills, WhatIDo, Work } from './components/Sections'
@@ -7,6 +7,12 @@ import { ME } from './data'
 // Scènes 3D lourdes : chargées à la demande
 const TechSpheres = lazy(() => import('./components/TechSpheres'))
 const TechKeyboard = lazy(() => import('./components/TechKeyboard'))
+
+class Guard extends Component {
+  state = { failed: false }
+  static getDerivedStateFromError() { return { failed: true } }
+  render() { return this.state.failed ? null : this.props.children }
+}
 
 export default function App() {
   return (
@@ -22,8 +28,8 @@ export default function App() {
         <Career />
         <Work />
         <Designs />
-        <Suspense fallback={<section className="spheres" />}><TechSpheres /></Suspense>
-        <Suspense fallback={<section className="stars kbsec" />}><TechKeyboard /></Suspense>
+        <Guard><Suspense fallback={<section className="spheres" />}><TechSpheres /></Suspense></Guard>
+        <Guard><Suspense fallback={<section className="stars kbsec" />}><TechKeyboard /></Suspense></Guard>
         <Skills />
         <Experience />
         <Contact />
