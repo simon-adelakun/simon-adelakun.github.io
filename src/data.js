@@ -2,10 +2,10 @@
 export const ME = { nom: 'ADELAKUN', prenom: 'TAIWO SIMON ADELANI', email: 'adelani55@icloud.com', tel: '07 88 99 98 17', telIntl: '+2250788999817', lieu: 'Cocody Faya, Abidjan, Côte d’Ivoire' }
 export const ROLES = ['DÉVELOPPEUR', 'INGÉNIEUR LOGICIEL']
 
-export const ABOUT = 'Je suis diplômé en Informatique, option Génie Logiciel (Licence et BTS Développeur d’Application). Je m’intéresse au développement d’applications, aux bases de données et à la modélisation de systèmes d’information. Curieux et rigoureux, j’aime transformer un vrai besoin en une application claire et solide, et je souhaite poursuivre mes études vers un niveau supérieur.'
+export const ABOUT = 'Je suis diplômé en Informatique, option Génie Logiciel (Licence) et titulaire d’un BTS Développement d’Application. Je m’intéresse au monde numérique, notamment au développement d’applications, aux bases de données et à la modélisation de systèmes d’information.'
 
 export const DO = [
-  { t: 'DÉVELOPPER', d: 'Applications web full-stack en Python avec Django et PostgreSQL, interfaces en JavaScript, authentification JWT et par session : je construis des outils complets, du clic de l’utilisateur jusqu’à la base de données.' },
+  { t: 'DÉVELOPPER', d: 'Applications web full-stack en Python avec Django et PostgreSQL, interfaces en JavaScript : je construis des outils complets, du clic de l’utilisateur jusqu’à la base de données.' },
   { t: 'CONCEVOIR', d: 'Avant de coder, je modélise avec MERISE et je découpe les besoins par rôle (patient, médecin, secrétaire, administrateur) pour obtenir une base de données propre et structurée.' },
   { t: 'ORGANISER', d: 'Plan de projet structuré, réunions de suivi et avancement partagé avec l’équipe : j’aime qu’un projet avance de façon claire et mesurable.' },
 ]
@@ -17,12 +17,13 @@ export const CAREER = [
   { r: 'BTS 1 Informatique Développeur d’Application (IDA)', o: 'IIPEA, Abidjan', y: '2023-2024', d: 'Premier pas dans l’univers du développement informatique.' },
   { r: 'BTS 2 Informatique Développeur d’Application (IDA)', o: 'IIPEA, Abidjan', y: '2024-2025', d: 'Approfondissement du développement d’applications et de la modélisation MERISE.' },
   { r: 'Licence 3 Informatique Génie Logiciel (IGL)', o: 'IIPEA, Abidjan', y: '2025-2026', d: 'Projet de fin d’études : SMART-RDV, une plateforme de gestion de rendez-vous médicaux.' },
+  { r: 'Stagiaire en informatique', o: 'Inventorys', y: '2026', d: '' },
 ]
 
 // demo / repo / img sont optionnels : un champ vide n'affiche rien.
 export const WORKS = [
-  { n: '01', t: 'SMART-RDV', c: 'Plateforme web · Projet de fin d’études', tools: 'Python, Django, PostgreSQL, JavaScript (FullCalendar.js), Celery/Redis. Quatre rôles (patient, médecin, secrétaire, administrateur), authentification JWT et par session par numéro de téléphone ivoirien, rappels SMS automatiques, salle d’attente et backoffice.', demo: '', repo: '', imgs: ['/projects/smart-rdv-1-prise-rdv.jpg', '/projects/smart-rdv-2-tableau-de-bord.jpg', '/projects/smart-rdv-3-historique.jpg', '/projects/smart-rdv-4-administration.jpg'] },
-  { n: '02', t: 'Gestion des employés et des salaires', c: 'Application web · Projet académique', tools: 'Python, Django, PostgreSQL, MERISE. Enregistrement des employés et de leurs informations salariales, modification et suppression des données du personnel.', demo: '', repo: '', img: '' },
+  { n: '01', t: 'SMART-RDV', c: 'Plateforme web · Projet de fin d’études', tools: 'Python, Django, PostgreSQL, JavaScript (FullCalendar.js), Celery/Redis. Quatre rôles (patient, médecin, secrétaire, administrateur), authentification JWT et par session par numéro de téléphone ivoirien, rappels SMS automatiques, salle d’attente et backoffice.', demo: '', repo: '', imgs: ['/projects/smart-rdv-0-connexion.jpg', '/projects/smart-rdv-1-prise-rdv.jpg', '/projects/smart-rdv-2-tableau-de-bord.jpg', '/projects/smart-rdv-3-historique.jpg', '/projects/smart-rdv-4-administration.jpg'] },
+  { n: '02', t: 'Gestion des employés et des salaires', c: 'Application web · Projet académique', tools: 'Python, Django, PostgreSQL, MERISE. Enregistrement des employés et de leurs informations salariales, modification et suppression des données du personnel.', demo: '', repo: '', img: '/projects/portfolio-banner.jpg' },
   { n: '03', t: 'PORTFOLIO', c: 'Site vitrine', tools: 'React, Three.js, React Three Fiber, animations au scroll.', demo: 'https://simon-adelakun.github.io', repo: 'https://github.com/simon-adelakun/simon-adelakun.github.io', img: '' },
 ]
 
@@ -66,7 +67,7 @@ export const SOCIALS = {
   github: 'https://github.com/simon-adelakun',
   linkedin: '',
   instagram: '',
-  whatsapp: 'https://wa.me/2250788999817',
+  whatsapp: 'https://wa.me/2250566991451',
 }
 export const CV = { url: '/CV-Adelakun-Simon.pdf', label: 'Télécharger mon CV' }
 
